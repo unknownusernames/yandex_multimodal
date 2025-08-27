@@ -14,7 +14,7 @@ class CNN(nn.Module):
         self.backbone = timm.create_model('resnet101', pretrained=True, num_classes=0)
         self.fc = nn.Linear(2048, output_dim)
         
-        # Размораживаем backbone
+        # размораживаем бэкбон
         for param in self.backbone.parameters():
             param.requires_grad = True
             

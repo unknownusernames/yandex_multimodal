@@ -17,7 +17,6 @@ class Config:
     TEXT_MODEL_UNFREEZE = "encoder.layer.11"
     IMAGE_MODEL_UNFREEZE = "layer4"
     
-    # Learning rates для разных частей модели
     TEXT_LR = 1e-4
     IMAGE_LR = 1e-4
     CLASSIFIER_LR = 1e-3
